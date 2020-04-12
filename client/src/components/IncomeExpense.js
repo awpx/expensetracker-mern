@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
+import { numberWithDot } from '../utils/format'
 
 export const IncomeExpense = () => {
   const { transactions } = useContext(GlobalContext)
@@ -19,11 +20,11 @@ export const IncomeExpense = () => {
     <div className='inc-exp-container'>
       <div>
         <h4>Pemasukan</h4>
-        <p className='money plus'>+Rp.{income}</p>
+        <p className='money plus'>+Rp {numberWithDot(income)}</p>
       </div>
       <div>
         <h4>Pengeluaran</h4>
-        <p className='money minus'>+Rp.{expense}</p>
+        <p className='money minus'>+Rp {numberWithDot(expense)}</p>
       </div>
 
     </div>
