@@ -1,6 +1,6 @@
 # Simple Finance Record App
 
-####Build Using:
+#### Build Using:
 - ExpressJS
 - MongoDB Atlas(mongoose)
 - React
